@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" data-language="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TTB3AR - Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Theme and Language Toggles -->
+  <div class="language-switch-wrapper">
+    <label class="language-switch" for="language-checkbox">
+      <input type="checkbox" id="language-checkbox" />
+      <div class="slider lang-slider round">
+        <span class="lang-label">JP</span>
+        <span class="lang-label">EN</span>
+      </div>
+    </label>
+  </div>
+  <div class="theme-switch-wrapper">
+    <label class="theme-switch" for="checkbox">
+      <input type="checkbox" id="checkbox" />
+      <div class="slider theme-slider round">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+      </div>
+    </label>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <span>TTB3AR</span>
+      </div>
+      <div class="nav-menu" id="nav-menu">
+        <a href="#hero" class="nav-link" id="nav-home">Home</a>
+        <a href="#about" class="nav-link" id="nav-about">About</a>
+        <a href="#projects" class="nav-link" id="nav-projects">Projects</a>
+        <a href="#contact" class="nav-link" id="nav-contact">Contact</a>
+      </div>
+      <div class="nav-toggle" id="nav-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 class="hero-title">
+            <span id="hero-greeting">Hello, I'm</span>
+            <span class="hero-name">TTB3AR</span>
+          </h1>
+          <p class="hero-subtitle" id="hero-subtitle">Full-Stack Developer & Security Enthusiast</p>
+          <p class="hero-description" id="hero-description">
+            I create secure, elegant web applications with a focus on user experience and modern technologies.
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary" id="hero-projects-btn">
+              <i class="fas fa-code"></i>
+              <span>My Projects</span>
+            </a>
+            <a href="#contact" class="btn btn-secondary" id="hero-contact-btn">
+              <i class="fas fa-envelope"></i>
+              <span>Get In Touch</span>
+            </a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="code-animation">
+            <div class="code-line"></div>
+            <div class="code-line"></div>
+            <div class="code-line"></div>
+            <div class="code-line"></div>
+            <div class="code-line"></div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <i class="fas fa-chevron-down"></i>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2 class="section-title" id="about-title">About Me</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p id="about-text-1">
+            I'm a passionate developer who loves creating secure, user-friendly applications. 
+            My expertise spans across web development, cryptography, and modern JavaScript frameworks.
+          </p>
+          <p id="about-text-2">
+            I believe in writing clean, maintainable code and designing intuitive user interfaces 
+            that provide exceptional user experiences across all devices and platforms.
+          </p>
+          <div class="skills">
+            <h3 id="skills-title">Technical Skills</h3>
+            <div class="skills-grid">
+              <div class="skill-item">
+                <i class="fab fa-js-square"></i>
+                <span>JavaScript</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-html5"></i>
+                <span>HTML5</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-css3-alt"></i>
+                <span>CSS3</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-lock"></i>
+                <span id="skill-crypto">Cryptography</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-mobile-alt"></i>
+                <span id="skill-responsive">Responsive Design</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-shield-alt"></i>
+                <span id="skill-security">Security</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-stats">
+          <div class="stat-item">
+            <div class="stat-number">5+</div>
+            <div class="stat-label" id="stat-projects">Projects</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">100%</div>
+            <div class="stat-label" id="stat-secure">Secure</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">24/7</div>
+            <div class="stat-label" id="stat-learning">Learning</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2 class="section-title" id="projects-title">Featured Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-image">
+            <i class="fas fa-lock project-icon"></i>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title" id="project-1-title">AES Encryption Tool</h3>
+            <p class="project-description" id="project-1-desc">
+              Secure client-side text encryption and decryption tool with modern UI and multilingual support.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">CryptoJS</span>
+              <span class="tech-tag">CSS3</span>
+            </div>
+            <div class="project-links">
+              <a href="https://ttb3ar.github.io/educrypt/" target="_blank" rel="noopener noreferrer" class="project-link">
+                <i class="fas fa-external-link-alt"></i>
+                <span id="project-1-live">Live Demo</span>
+              </a>
+              <a href="https://github.com/ttb3ar/educrypt" target="_blank" rel="noopener noreferrer" class="project-link">
+                <i class="fab fa-github"></i>
+                <span>GitHub</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Placeholder for future projects -->
+        <div class="project-card coming-soon">
+          <div class="project-image">
+            <i class="fas fa-code project-icon"></i>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title" id="project-2-title">Coming Soon</h3>
+            <p class="project-description" id="project-2-desc">
+              More exciting projects are in development. Stay tuned for updates!
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">API</span>
+            </div>
+            <div class="project-links">
+              <span class="project-link disabled" id="project-2-coming">
+                <i class="fas fa-clock"></i>
+                <span>In Development</span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section-title" id="contact-title">Get In Touch</h2>
+      <div class="contact-content">
+        <div class="contact-text">
+          <p id="contact-text">
+            I'm always interested in new opportunities and collaborations. 
+            Whether you have a project in mind or just want to connect, feel free to reach out!
+          </p>
+        </div>
+        <div class="contact-links">
+          <a href="https://github.com/ttb3ar" target="_blank" rel="noopener noreferrer" class="contact-link">
+            <i class="fab fa-github"></i>
+            <span>GitHub</span>
+          </a>
+          <a href="https://linkedin.com/in/ttb3ar" target="_blank" rel="noopener noreferrer" class="contact-link">
+            <i class="fab fa-linkedin"></i>
+            <span>LinkedIn</span>
+          </a>
+          <a href="mailto:contact@ttb3ar.dev" class="contact-link">
+            <i class="fas fa-envelope"></i>
+            <span id="contact-email">Email</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p id="footer-text">© 2025 TTB3AR. Built with passion and security in mind.</p>
+        <div class="footer-links">
+          <a href="#hero" id="footer-top">Back to Top</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
